@@ -1,3 +1,5 @@
+import Image from "./Ellipse 1.png";
+
 import "../styles/Global.css";
 export default function Main() {
   return (
@@ -6,7 +8,9 @@ export default function Main() {
         <h1>Please review and sign the binding agreement</h1>
       </header>
       <div className="main-header">
-        <div class="avatar"></div>
+        <div>
+          <img src={Image} alt="" srcset="" />
+        </div>
         <div className="about">
           <div className="name">
             <strong>Ariana Barros</strong>

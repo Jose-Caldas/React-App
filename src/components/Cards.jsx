@@ -1,9 +1,13 @@
+import Image from "./Ellipse 1.png";
+
 export default function Cards() {
   return (
     <div className="cards">
       <header>
         <div class="card-header">
-          <div className="avatar"></div>
+          <div>
+            <img src={Image} alt="" srcset="" />
+          </div>
           <strong>Ham Chuwon</strong>
         </div>
         <div class="card-left">
