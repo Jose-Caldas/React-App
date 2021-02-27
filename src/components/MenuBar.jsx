@@ -10,6 +10,7 @@ import {
 } from "react-icons/fi";
 
 import Ellipse from "./Ellipse 1.png";
+import "../styles/MenuBar.css";
 
 export default function MenuBar() {
   return (
@@ -27,7 +28,7 @@ export default function MenuBar() {
       </div>
       <div className="menuBottom">
         <FiActivity />
-        <FiInbox />
+        <FiInbox id="green" />
         <img src={Ellipse} alt="avatar" />
       </div>
     </div>

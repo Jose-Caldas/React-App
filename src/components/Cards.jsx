@@ -1,24 +1,28 @@
-import Image from "./Ellipse 1.png";
-
-export default function Cards() {
+import "../styles/Cards.css";
+export default function Cards({
+  strong,
+  small,
+  span,
+  h2,
+  description,
+  paragraph,
+}) {
   return (
-    <div className="cards">
+    <div className="cardsContainer">
       <header>
-        <div class="card-header">
-          <div>
-            <img src={Image} alt="" srcset="" />
-          </div>
-          <strong>Ham Chuwon</strong>
+        <div className="cardsProfile">
+          <h2>{h2}</h2>
+          <strong>{strong}</strong>
         </div>
-        <div class="card-left">
-          <small>Today</small>
-          <span>2</span>
+        <div className="cardsInfo">
+          <small>{small}</small>
+          <span>{span}</span>
         </div>
       </header>
-      <p class="small-paragraph">Please review and sing the last Bin...</p>
-      <p class="large-paragraph">
-        Hello John, I would really like to see some examples of the previous
-      </p>
+      <div>
+        <h3>{description}</h3>
+        <p>{paragraph}</p>
+      </div>
     </div>
   );
 }

@@ -1,7 +1,6 @@
-import MenuBar from "./components/MenuBar";
-import AsideBar from "./components/AsideBarLeft";
+import { AsideLeft } from "./components/AsideLeft";
 import Main from "./components/Main";
-import AsideBarRight from "./components/AsideBarRight";
+import MenuBar from "./components/MenuBar";
 
 import "./styles/Global.css";
 
@@ -9,9 +8,8 @@ function App() {
   return (
     <div className="container">
       <MenuBar />
-      <AsideBar></AsideBar>
+      <AsideLeft />
       <Main />
-      <AsideBarRight />
     </div>
   );
 }
