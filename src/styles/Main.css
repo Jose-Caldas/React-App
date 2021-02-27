@@ -50,7 +50,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 60%;
+  width: 50%;
 }
 
 .info small {
@@ -62,8 +62,35 @@
   color: var(--gray);
 }
 
-.mainContainer p {
+.paragraph {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 20px;
+}
+
+.paragraph p {
+  width: 100%;
   font-size: 14px;
-  line-height: 16px;
-  color: black;
+  line-height: 1.5rem;
+  color: var(--black);
+}
+
+.paragraph p svg {
+  margin-right: 10px;
+}
+
+.paragraph p:last-child {
+  color: var(--gray);
+}
+
+.paragraph p span {
+  display: block;
+  padding: 10px 0 10px 10px;
+  border-radius: 3px;
+}
+
+.paragraph p span:last-child {
+  padding: 10px 0 10px 10px;
+
+  background-color: var(--blue100);
 }

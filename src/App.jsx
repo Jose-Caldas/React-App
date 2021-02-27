@@ -1,4 +1,5 @@
 import { AsideLeft } from "./components/AsideLeft";
+import AsideRight from "./components/AsideRight";
 import Main from "./components/Main";
 import MenuBar from "./components/MenuBar";
 
@@ -10,6 +11,7 @@ function App() {
       <MenuBar />
       <AsideLeft />
       <Main />
+      <AsideRight />
     </div>
   );
 }
